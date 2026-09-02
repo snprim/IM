@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Inferential Models",
+    "section": "",
+    "text": "This site contains useful information about Inferential Models (IMs).\nThis website contains useful information about Inferential Models (IMs). More information can also be found on Ryan Martin’s website."
+  },
+  {
+    "objectID": "tutorial.html",
+    "href": "tutorial.html",
+    "title": "IM Tutorial",
+    "section": "",
+    "text": "One-parameter examples\n\nNormal distribution\nBinomial distribution"
+  },
+  {
+    "objectID": "tutorial/Normal.html",
+    "href": "tutorial/Normal.html",
+    "title": "Normal Distribution",
+    "section": "",
+    "text": "This page shows a toy example of how to construct a possibilistic inferential model (IM) when the data is assumed to come from a Normal distribution with mean \\(\\theta\\) and variance \\(1\\).\n\n\nTo construct an inferential model, we first construct the relative likelihood: \\[ R(x, \\theta) = \\frac{p_{\\theta}(x)}{\\sup_{\\vartheta} p_\\vartheta(x)}, \\] where \\(p_{\\theta}(x)\\) is the likelihood function with parameter \\(\\theta\\) and observed data \\(x\\).\nAssuming we observe \\(x \\in X\\) and \\(X \\sim N(\\theta, 1)\\), the maximum likelihood estimator is \\(\\widehat{\\theta}=x\\).\n\\[\\begin{align}\nR(x,\\theta) &= \\frac{p_{\\theta}(x)}{p_{\\widehat{\\theta}}(x)} = p_{\\theta}(x) = p(|x-\\theta|),\n\\end{align}\\] where \\(p\\) is the density function for standard Normal distribution.\n\n\n\nThe next step is a validation step:\n\\[\\pi_x(\\theta) = P_\\theta(R(X, \\theta) \\le R(x, \\theta)).\\]\nFor the Normal distribution, there is a closed form for the contour.\n\\[\\begin{align}\n\\pi_x(\\theta) &= P_\\theta \\{ p(X-\\theta) \\le p(x-\\theta) \\} \\\\\n&= P_\\theta \\{ |X-\\theta| \\le |x-\\theta|\\} \\\\\n&= 2 \\{1 - P(|x-\\theta|) \\},\n\\end{align}\\] where \\(P\\) is the cumulative distribution function for standard Normal distribution. The above derivation works for sample size \\(n=1\\). When \\(n&gt;1\\), the sample mean (\\(\\bar{x}\\)) and the sample variance (\\(1/\\sqrt{n}\\)) are used instead.\n\\[\\pi_x(\\theta) = 2 \\{ 1 - P(\\sqrt{n} \\cdot |\\bar{x} - \\theta| ) \\}.\\]\nThe code below finds the contour function \\(\\pi_x(\\theta)\\) given observation \\(x\\) and the parameter of interest \\(\\theta\\).\n\ncontour_normal &lt;- function(x, theta){\n  x_bar &lt;- mean(x)\n  n &lt;- length(x)\n  return(2 * (pnorm(abs(x_bar-theta)*sqrt(n), lower.tail = F) ))\n}\n\n\n\n\nNow we assume the true parameter is \\(0\\) and sample size is \\(1\\), let’s plot the contour function given that we observed \\(x=1\\).\n\nn &lt;- 1\ntrue_theta &lt;- 0\nX &lt;- 1\n\ntheta &lt;- seq(true_theta-6, true_theta+6, .1)\npi_normal &lt;- contour_normal(X, theta)\nplot(theta, pi_normal, type = \"l\", xlab = expression(theta), ylab = expression(pi[x](theta)))\npi_true_theta &lt;- contour_normal(X, true_theta)\nabline(h=.05, lty=2)\nsegments(-1, 0, 0, 0, col=\"red\", lwd=2)\nsegments(0, 0, 0, contour_normal(X,0), lty=3, col=\"red\")\npoints(0, contour_normal(X,0), col=\"red\", pch=19)\n\n\n\n\n\n\n\n\nAs shown above, the black curve is the contour function for \\(x=1\\). The possibility measure (or upper probability) of the hypothesis \\(h=[-1,0]\\) can be found by maximization:\n\\[ \\Pi_x(h) = \\sup_{\\theta \\in [-1,0]} \\pi_x(\\theta) \\approx 0.317,\\] where the red circle is.\nTo find a \\(95\\%\\) confidence set, the black dashed line at \\(0.05\\) shows that the set is approximately \\([-1, 3]\\)."
+  },
+  {
+    "objectID": "tutorial/Normal.html#relative-likelihood",
+    "href": "tutorial/Normal.html#relative-likelihood",
+    "title": "Normal Distribution",
+    "section": "",
+    "text": "To construct an inferential model, we first construct the relative likelihood: \\[ R(x, \\theta) = \\frac{p_{\\theta}(x)}{\\sup_{\\vartheta} p_\\vartheta(x)}, \\] where \\(p_{\\theta}(x)\\) is the likelihood function with parameter \\(\\theta\\) and observed data \\(x\\).\nAssuming we observe \\(x \\in X\\) and \\(X \\sim N(\\theta, 1)\\), the maximum likelihood estimator is \\(\\widehat{\\theta}=x\\).\n\\[\\begin{align}\nR(x,\\theta) &= \\frac{p_{\\theta}(x)}{p_{\\widehat{\\theta}}(x)} = p_{\\theta}(x) = p(|x-\\theta|),\n\\end{align}\\] where \\(p\\) is the density function for standard Normal distribution."
+  },
+  {
+    "objectID": "tutorial/Normal.html#contour-function",
+    "href": "tutorial/Normal.html#contour-function",
+    "title": "Normal Distribution",
+    "section": "",
+    "text": "The next step is a validation step:\n\\[\\pi_x(\\theta) = P_\\theta(R(X, \\theta) \\le R(x, \\theta)).\\]\nFor the Normal distribution, there is a closed form for the contour.\n\\[\\begin{align}\n\\pi_x(\\theta) &= P_\\theta \\{ p(X-\\theta) \\le p(x-\\theta) \\} \\\\\n&= P_\\theta \\{ |X-\\theta| \\le |x-\\theta|\\} \\\\\n&= 2 \\{1 - P(|x-\\theta|) \\},\n\\end{align}\\] where \\(P\\) is the cumulative distribution function for standard Normal distribution. The above derivation works for sample size \\(n=1\\). When \\(n&gt;1\\), the sample mean (\\(\\bar{x}\\)) and the sample variance (\\(1/\\sqrt{n}\\)) are used instead.\n\\[\\pi_x(\\theta) = 2 \\{ 1 - P(\\sqrt{n} \\cdot |\\bar{x} - \\theta| ) \\}.\\]\nThe code below finds the contour function \\(\\pi_x(\\theta)\\) given observation \\(x\\) and the parameter of interest \\(\\theta\\).\n\ncontour_normal &lt;- function(x, theta){\n  x_bar &lt;- mean(x)\n  n &lt;- length(x)\n  return(2 * (pnorm(abs(x_bar-theta)*sqrt(n), lower.tail = F) ))\n}"
+  },
+  {
+    "objectID": "tutorial/Normal.html#example-demonstration",
+    "href": "tutorial/Normal.html#example-demonstration",
+    "title": "Normal Distribution",
+    "section": "",
+    "text": "Now we assume the true parameter is \\(0\\) and sample size is \\(1\\), let’s plot the contour function given that we observed \\(x=1\\).\n\nn &lt;- 1\ntrue_theta &lt;- 0\nX &lt;- 1\n\ntheta &lt;- seq(true_theta-6, true_theta+6, .1)\npi_normal &lt;- contour_normal(X, theta)\nplot(theta, pi_normal, type = \"l\", xlab = expression(theta), ylab = expression(pi[x](theta)))\npi_true_theta &lt;- contour_normal(X, true_theta)\nabline(h=.05, lty=2)\nsegments(-1, 0, 0, 0, col=\"red\", lwd=2)\nsegments(0, 0, 0, contour_normal(X,0), lty=3, col=\"red\")\npoints(0, contour_normal(X,0), col=\"red\", pch=19)\n\n\n\n\n\n\n\n\nAs shown above, the black curve is the contour function for \\(x=1\\). The possibility measure (or upper probability) of the hypothesis \\(h=[-1,0]\\) can be found by maximization:\n\\[ \\Pi_x(h) = \\sup_{\\theta \\in [-1,0]} \\pi_x(\\theta) \\approx 0.317,\\] where the red circle is.\nTo find a \\(95\\%\\) confidence set, the black dashed line at \\(0.05\\) shows that the set is approximately \\([-1, 3]\\)."
+  },
+  {
+    "objectID": "tutorial/Binomial.html",
+    "href": "tutorial/Binomial.html",
+    "title": "Binomial",
+    "section": "",
+    "text": "This page shows a toy example of how to construct a possibilistic inferential model (IM) when the data is assumed to come from a Binomial distribution with \\(n\\) trials and probability of success \\(\\theta\\).\n\n\nTo construct an inferential model, we first construct the relative likelihood: \\[ R(x, \\theta) = \\frac{p_{\\theta}(x)}{\\sup_{\\vartheta} p_\\vartheta(x)}, \\] where \\(p_{\\theta}(x)\\) is the likelihood function of Bin(\\(n, \\theta\\)):\n\\[p_\\theta(x) = \\begin{pmatrix} n \\\\ x \\end{pmatrix} \\theta^x (1-\\theta)^{n-x}, \\quad x = 0, 1, \\cdots, n, \\quad \\theta \\in [0, 1].\\] The maximum likelihood estimator of a Binomial distribution is \\(\\frac{x}{n}\\). Thus the relative likelihood is:\n\\[R(x, \\theta) = \\frac{p_\\theta(x)}{p_{\\widehat{\\theta}}(x)} = \\left( \\frac{n\\theta}{x}\\right)^x \\left( \\frac{n - n\\theta}{n-x}\\right)^{n-x} \\]\n\n\n\nThe next step is a validation step:\n\\[\\pi_x(\\theta) = P_\\theta(R(X, \\theta) \\le R(x, \\theta)).\\]\nFor the Binomial distribution, there is a closed form for the contour.\n\\[\\pi_x(\\theta) = \\sum_{y=0}^n 1 \\{ R(y, \\theta) \\le R(x, \\theta) \\} p_\\theta(y).\\]\nThe code below finds the contour function \\(\\pi_x(\\theta)\\) given observation \\(x\\) and the parameter of interest \\(\\theta\\).\n\nR_binomial &lt;- function(x, n, theta){\n  \n  R &lt;- (n*theta/x)^x * (n*(1-theta)/(n-x))^(n-x)\n  return(R)\n  \n}\n\n# closed form for x=n\ncontour_binomial &lt;- function(theta, n, x){\n  \n  RHS &lt;- R_binomial(x, n, theta)\n  total &lt;- 0\n  for (i in 0:n){\n    total &lt;- total + (1*(R_binomial(i, n, theta) &lt;= RHS)) * dbinom(i, n, theta)\n  }\n  return(total)\n  \n}\n\n\n\n\nNow assume we observe \\(6\\) successes from \\(10\\) trilas, let’s plot the contour function.\n\nn &lt;- 10\nx &lt;- 6\n\ntheta &lt;- seq(0.01, .99, by = .005)\n\npi_binomial &lt;- contour_binomial(theta, n, x)\nplot(theta, pi_binomial, type = \"l\", xlab = expression(theta), ylab = expression(pi[x](theta)))\nabline(h=.05, lty=2)\nsegments(0.3, 0, 0.5, 0, col=\"red\", lwd=2)\nsegments(0.5, 0, 0.5, contour_binomial(0.5, n, x), lty=3, col=\"red\")\npoints(0.5, contour_binomial(0.5, n, x), col=\"red\", pch=19)\n\n\n\n\n\n\n\n\nAs shown above, the black curve is the contour function for \\(x=6\\). The possibility measure (or upper probability) of the hypothesis \\(h=[0.3,0.5]\\) can be found by maximization:\n\\[ \\Pi_x(h) = \\sup_{\\theta \\in [0.3,0.5]} \\pi_x(\\theta) \\approx 0.754,\\] where the red circle is.\nTo find a \\(95\\%\\) confidence set, the black dashed line at \\(0.05\\) shows that the set is approximately \\([0.25, 0.85]\\)."
+  },
+  {
+    "objectID": "tutorial/Binomial.html#relative-likelihood",
+    "href": "tutorial/Binomial.html#relative-likelihood",
+    "title": "Binomial",
+    "section": "",
+    "text": "To construct an inferential model, we first construct the relative likelihood: \\[ R(x, \\theta) = \\frac{p_{\\theta}(x)}{\\sup_{\\vartheta} p_\\vartheta(x)}, \\] where \\(p_{\\theta}(x)\\) is the likelihood function of Bin(\\(n, \\theta\\)):\n\\[p_\\theta(x) = \\begin{pmatrix} n \\\\ x \\end{pmatrix} \\theta^x (1-\\theta)^{n-x}, \\quad x = 0, 1, \\cdots, n, \\quad \\theta \\in [0, 1].\\] The maximum likelihood estimator of a Binomial distribution is \\(\\frac{x}{n}\\). Thus the relative likelihood is:\n\\[R(x, \\theta) = \\frac{p_\\theta(x)}{p_{\\widehat{\\theta}}(x)} = \\left( \\frac{n\\theta}{x}\\right)^x \\left( \\frac{n - n\\theta}{n-x}\\right)^{n-x} \\]"
+  },
+  {
+    "objectID": "tutorial/Binomial.html#contour-function",
+    "href": "tutorial/Binomial.html#contour-function",
+    "title": "Binomial",
+    "section": "",
+    "text": "The next step is a validation step:\n\\[\\pi_x(\\theta) = P_\\theta(R(X, \\theta) \\le R(x, \\theta)).\\]\nFor the Binomial distribution, there is a closed form for the contour.\n\\[\\pi_x(\\theta) = \\sum_{y=0}^n 1 \\{ R(y, \\theta) \\le R(x, \\theta) \\} p_\\theta(y).\\]\nThe code below finds the contour function \\(\\pi_x(\\theta)\\) given observation \\(x\\) and the parameter of interest \\(\\theta\\).\n\nR_binomial &lt;- function(x, n, theta){\n  \n  R &lt;- (n*theta/x)^x * (n*(1-theta)/(n-x))^(n-x)\n  return(R)\n  \n}\n\n# closed form for x=n\ncontour_binomial &lt;- function(theta, n, x){\n  \n  RHS &lt;- R_binomial(x, n, theta)\n  total &lt;- 0\n  for (i in 0:n){\n    total &lt;- total + (1*(R_binomial(i, n, theta) &lt;= RHS)) * dbinom(i, n, theta)\n  }\n  return(total)\n  \n}"
+  },
+  {
+    "objectID": "tutorial/Binomial.html#example-demonstration",
+    "href": "tutorial/Binomial.html#example-demonstration",
+    "title": "Binomial",
+    "section": "",
+    "text": "Now assume we observe \\(6\\) successes from \\(10\\) trilas, let’s plot the contour function.\n\nn &lt;- 10\nx &lt;- 6\n\ntheta &lt;- seq(0.01, .99, by = .005)\n\npi_binomial &lt;- contour_binomial(theta, n, x)\nplot(theta, pi_binomial, type = \"l\", xlab = expression(theta), ylab = expression(pi[x](theta)))\nabline(h=.05, lty=2)\nsegments(0.3, 0, 0.5, 0, col=\"red\", lwd=2)\nsegments(0.5, 0, 0.5, contour_binomial(0.5, n, x), lty=3, col=\"red\")\npoints(0.5, contour_binomial(0.5, n, x), col=\"red\", pch=19)\n\n\n\n\n\n\n\n\nAs shown above, the black curve is the contour function for \\(x=6\\). The possibility measure (or upper probability) of the hypothesis \\(h=[0.3,0.5]\\) can be found by maximization:\n\\[ \\Pi_x(h) = \\sup_{\\theta \\in [0.3,0.5]} \\pi_x(\\theta) \\approx 0.754,\\] where the red circle is.\nTo find a \\(95\\%\\) confidence set, the black dashed line at \\(0.05\\) shows that the set is approximately \\([0.25, 0.85]\\)."
+  },
+  {
+    "objectID": "papers.html",
+    "href": "papers.html",
+    "title": "Suggested Reading",
+    "section": "",
+    "text": "Theory\n\nRyan Martin. Possibilistic inferential models: a review. Journal of American Statistical Association, 121 (553): 807-826. Article on arXiv.\n\n\n\nComputation\n\nRyan Martin. An efficient Monte Carlo method for valid prior-free possibilistic statistical inference. Journal of American Statistical Association, to appear. Article on arXiv."
+  }
+]
