@@ -1,0 +1,10 @@
+---
+title: "IM Tutorial"
+format: html
+---
+
+### One-parameter examples
+
+- [Normal distribution](tutorial/Normal.html)
+
+- [Binomial distribution](tutorial/Binomial.html)

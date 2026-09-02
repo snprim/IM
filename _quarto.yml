@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Inferential Models"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - papers.qmd
+      - tutorial.qmd
+
+format:
+  html:
+    theme:
+      # - cosmo
+      # - brand
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+
+editor: visual
+
