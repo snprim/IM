@@ -8,9 +8,9 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: people.qmd
       - href: papers.qmd
       - href: tutorial.qmd
-      - href: people.qmd
       
   announcement:
     icon: tools
