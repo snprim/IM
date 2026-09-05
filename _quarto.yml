@@ -8,9 +8,17 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - papers.qmd
-      - tutorial.qmd
-
+      - href: papers.qmd
+      - href: tutorial.qmd
+      - href: people.qmd
+      
+  announcement:
+    icon: tools
+    dismissable: true
+    content: "This website is currently **under construction**."
+    type: warning
+    position: above-navbar
+    
 format:
   html:
     theme:

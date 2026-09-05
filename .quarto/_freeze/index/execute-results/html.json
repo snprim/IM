@@ -1,8 +1,8 @@
 {
-  "hash": "4ce75c83033efa77d1a23ce664059a86",
+  "hash": "9d560c3eb07b151df4177a9a54d2a39a",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Inferential Models\"\nformat: \n  html:\n    code-fold: true\nengine: knitr\n---\n\n:::::: columns\n::: {.column width=\"30%\"}\n\n![](iamges/imbook_cover.jpg)\n\n:::\n\n::: {.column width=\"10%\"}\n<!-- empty column to create gap -->\n:::\n\n::: {.column width=\"60%\"}\n\nThis site contains useful information about Inferential Models (IMs).\n\nThis website contains useful information about Inferential Models (IMs). More information can also be found on [Ryan Martin's website](https://martinrg07.github.io/). \n\n:::\n::::::\n",
+    "markdown": "---\ntitle: \"Inferential Models\"\nformat: \n  html:\n    code-fold: true\nengine: knitr\n---\n\n:::::: columns\n::: {.column width=\"30%\"}\n\n![](images/imbook_cover.jpg)\n\n:::\n\n::: {.column width=\"10%\"}\n<!-- empty column to create gap -->\n:::\n\n::: {.column width=\"60%\"}\n\nThis website contains useful information about Inferential Models (IMs). More information can also be found on [Ryan Martin's website](https://martinrg07.github.io/). \n\n:::\n::::::\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"

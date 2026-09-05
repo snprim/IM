@@ -16,5 +16,8 @@
   },
   "papers.qmd": {
     "papers.html": "99164526"
+  },
+  "people.qmd": {
+    "people.html": "43e1a68b"
   }
 }

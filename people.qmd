@@ -1,0 +1,51 @@
+---
+title: "IMers"
+---
+
+:::{.team-member}
+::::{.columns}
+
+:::{.column width="30%"}
+![](images/RM.jpg){.team-img}
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+:::{.column width="60%"}
+### Ryan Martin
+**Professor, Purdue University**
+
+[Brief bio]
+
+[Website](https://rgmartin07.github.io) | [GitHub](https://github) | [Twitter](https://twitter)
+:::
+
+::::
+:::
+
+---
+
+:::{.team-member}
+::::{.columns}
+
+:::{.column width="30%"}
+![](images/SP.png){.team-img}
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+:::{.column width="60%"}
+### Shih-Ni Prim
+**Postdoc Fellow, Wake Forest University**
+
+[Brief bio]
+
+[Website](https://snprim.github.io) | [GitHub](https://github.com/snprim) | [LinkedIn](https://www.linkedin.com/in/shih-ni-prim-14033336/)
+:::
+
+::::
+:::
