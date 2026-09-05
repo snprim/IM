@@ -19,7 +19,8 @@ title: "IMers"
 
 [Brief bio]
 
-[Website](https://rgmartin07.github.io) | [GitHub](https://github) | [Twitter](https://twitter)
+[Website](https://martinrg07.github.io) 
+
 :::
 
 ::::
