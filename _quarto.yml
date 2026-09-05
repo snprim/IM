@@ -14,7 +14,7 @@ website:
       
   announcement:
     icon: tools
-    dismissable: true
+    dismissable: false
     content: "This website is currently **under construction**."
     type: warning
     position: above-navbar
