@@ -11,7 +11,7 @@
     "href": "index.html",
     "title": "Inferential Models",
     "section": "",
-    "text": "This website contains useful information about Inferential Models (IMs). More information can also be found on Ryan Martin’s website."
+    "text": "Inferential Models (IMs) are originated from the book, as seen here, by Ryan Martin and Chuanhai Liu from 2015. It provides a tool outside the Frequentist and Bayesian frameworks that offers the capability of uncertainty quantification and reliability guarantee. While the construction from 2015 relies on random set theory, more recent constructions are based on possibility theory and arguably easier to use. Up till now, the introduction of IMs almost solely rely on publications, which by their nature have to be concise. This website intends to provide general information not delivered by publications, such as tutorials, toy examples, recent updates, etc."
   },
   {
     "objectID": "tutorial.html",
@@ -81,7 +81,7 @@
     "href": "papers.html",
     "title": "Suggested Reading",
     "section": "",
-    "text": "Theory\n\nRyan Martin. Possibilistic inferential models: a review. Journal of American Statistical Association, 121 (553): 807-826. Article on arXiv.\n\n\n\nComputation\n\nRyan Martin. An efficient Monte Carlo method for valid prior-free possibilistic statistical inference. Journal of American Statistical Association, to appear. Article on arXiv."
+    "text": "Theory\n\nRyan Martin. Possibilistic inferential models: a review. Journal of American Statistical Association, 121 (553): 807-826. Article on arXiv.\n\n\n\nComputation\n\nRyan Martin. An efficient Monte Carlo method for valid prior-free possibilistic statistical inference. Journal of American Statistical Association, to appear. Article on arXiv.\n\n\n\nApplication"
   },
   {
     "objectID": "problems.html",

@@ -9,3 +9,6 @@ title: "Suggested Reading"
 ### Computation
 
 - Ryan Martin. An efficient Monte Carlo method for valid prior-free possibilistic statistical inference. *Journal of American Statistical Association*, to appear. [Article on arXiv](https://arxiv.org/abs/2501.10585).
+
+### Application 
+
