@@ -11,6 +11,7 @@ website:
       - href: people.qmd
       - href: papers.qmd
       - href: tutorial.qmd
+      - href: problems.qmd
       
   announcement:
     icon: tools
