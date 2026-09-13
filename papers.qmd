@@ -10,5 +10,7 @@ title: "Suggested Reading"
 
 - Ryan Martin. An efficient Monte Carlo method for valid prior-free possibilistic statistical inference. *Journal of American Statistical Association*, to appear. [Article on arXiv](https://arxiv.org/abs/2501.10585).
 
-### Application 
+### Application
+
+- Ryan Martin, Naomi Singer, Jonathan Williams. Valid and efficient possibilistic structure learning in Gaussian linear regression. [Article on arXiv](https://arxiv.org/abs/2511.09305).
 

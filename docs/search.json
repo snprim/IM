@@ -11,7 +11,7 @@
     "href": "index.html",
     "title": "Inferential Models",
     "section": "",
-    "text": "About the website\nInferential Models (IMs) were first introduced by the book, as seen to the left, by Ryan Martin and Chuanhai Liu from 2015. It provides a tool outside the Frequentist and Bayesian frameworks and offers the capability of uncertainty quantification and reliability guarantee. Succinctly, IMs can do Bayesian-like update without requiring a complete prior.\nUp till now, the introduction of IMs almost solely relies on publications, which require concision and generality. To help interested readers use IMs, this website provide practical guides and information not delivered by publications, such as tutorials, worked-out examples, recent updates, etc.\n\n\nContact Us\n Email: prims@wfu.edu"
+    "text": "Inferential Models (IMs) were first introduced by the book, as seen to the left, by Ryan Martin and Chuanhai Liu from 2015. It provides a tool outside the Frequentist and Bayesian frameworks and offers the capability of uncertainty quantification and reliability guarantee. Succinctly, IMs can do Bayesian-like update without requiring a complete prior.\nUp till now, the introduction of IMs almost solely relies on publications, which require concision and generality. To help interested readers use IMs, this website provide practical guides and information not delivered by publications, such as tutorials, worked-out examples, recent updates, etc.\n\nContact Us\n Email: prims@wfu.edu"
   },
   {
     "objectID": "tutorial.html",
@@ -81,7 +81,7 @@
     "href": "papers.html",
     "title": "Suggested Reading",
     "section": "",
-    "text": "Theory\n\nRyan Martin. Possibilistic inferential models: a review. Journal of American Statistical Association, 121 (553): 807-826. Article on arXiv.\n\n\n\nComputation\n\nRyan Martin. An efficient Monte Carlo method for valid prior-free possibilistic statistical inference. Journal of American Statistical Association, to appear. Article on arXiv.\n\n\n\nApplication"
+    "text": "Theory\n\nRyan Martin. Possibilistic inferential models: a review. Journal of American Statistical Association, 121 (553): 807-826. Article on arXiv.\n\n\n\nComputation\n\nRyan Martin. An efficient Monte Carlo method for valid prior-free possibilistic statistical inference. Journal of American Statistical Association, to appear. Article on arXiv.\n\n\n\nApplication\n\nRyan Martin, Naomi Singer, Jonathan Williams. Valid and efficient possibilistic structure learning in Gaussian linear regression. Article on arXiv."
   },
   {
     "objectID": "problems.html",
