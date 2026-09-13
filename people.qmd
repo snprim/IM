@@ -3,6 +3,9 @@ title: "IMers"
 ---
 
 ::::::: team-member
+
+Below are the people that are actively working on questions related to IMs. 
+
 :::::: columns
 ::: {.column width="30%"}
 # ![](images/RM.jpg){.team-img}
