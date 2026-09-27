@@ -11,7 +11,7 @@
     "href": "index.html",
     "title": "Inferential Models",
     "section": "",
-    "text": "Inferential Models (IMs) were first introduced by the 2015 book, as pictured to the left, by Ryan Martin and Chuanhai Liu. It provides a tool outside the Frequentist and Bayesian frameworks and offers the capability of uncertainty quantification and reliability guarantee. Succinctly, IMs can do Bayesian-like update without requiring a complete prior.\nUntil now, the introduction of IMs almost solely relies on publications, which require concision and generality. To encourage interested readers explore the use of IMs, this website provide practical guides and information not easily delivered by publications, such as code, tutorials, worked-out examples, recent updates, etc.\n\nContact Us\n Email: prims@wfu.edu"
+    "text": "Inferential Models (IMs) were first introduced by the 2015 book, as pictured to the left, by Ryan Martin and Chuanhai Liu. It provides a tool outside the Frequentist and Bayesian frameworks and offers the capability of uncertainty quantification and reliability guarantee. Succinctly, IMs can do Bayesian-like update without requiring a complete prior.\nUntil now, the introduction of IMs almost solely relies on publications, which require concision and generality. To encourage interested readers explore the use of IMs, this website provides practical guides and information not easily delivered by publications, such as code, tutorials, worked-out examples, recent updates, etc.\n\nContact Us\n Email: prims@wfu.edu"
   },
   {
     "objectID": "tutorial.html",
