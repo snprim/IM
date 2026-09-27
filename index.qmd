@@ -17,7 +17,7 @@ engine: knitr
 
 ::: {.column width="60%"}
 
-Inferential Models (IMs) were first introduced by [the book](https://doi.org/10.1201/b19269), as pictured to the left, by [Ryan Martin](https://martinrg07.github.io) and [Chuanhai Liu](https://www.stat.purdue.edu/~chuanhai/) from 2015. It provides a tool outside the Frequentist and Bayesian frameworks and offers the capability of uncertainty quantification and reliability guarantee. Succinctly, IMs can do Bayesian-like update without requiring a complete prior. 
+Inferential Models (IMs) were first introduced by [the book](https://doi.org/10.1201/b19269), as pictured to the left, by [Ryan Martin](https://martinrg07.github.io) and [Chuanhai Liu](https://www.stat.purdue.edu/people/faculty/chuanhai.html) from 2015. It provides a tool outside the Frequentist and Bayesian frameworks and offers the capability of uncertainty quantification and reliability guarantee. Succinctly, IMs can do Bayesian-like update without requiring a complete prior. 
 
 Until now, the introduction of IMs almost solely relies on publications, which require concision and generality. To help interested readers use IMs, this website provide practical guides and information not easily delivered by publications, such as code, tutorials, worked-out examples, recent updates, etc.
 
