@@ -32,6 +32,29 @@ Below are the people that are actively working on questions related to IMs.
 ::::::: team-member
 :::::: columns
 ::: {.column width="30%"}
+# ![](images/LC.jpg){.team-img}
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="60%"}
+### Leo Cella
+
+**Assistant Professor, Wake Forest University**
+
+[brief bio]  
+
+[Website](https://www.leocella.com/) 
+:::
+::::::
+:::::::
+------------------------------------------------------------------------
+
+::::::: team-member
+:::::: columns
+::: {.column width="30%"}
 # ![](images/SP.png){.team-img}
 :::
 
