@@ -1,26 +1,5 @@
 [
   {
-    "objectID": "people.html",
-    "href": "people.html",
-    "title": "IMers",
-    "section": "",
-    "text": "Below are the people that are actively working on questions related to IMs.\n\n\n\n\n\n\n\n\n\nRyan Martin\nProfessor, Purdue University\n[Brief bio]\nWebsite\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLeo Cella\nAssistant Professor, Wake Forest University\n[brief bio]\nWebsite\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nShih-Ni Prim\nPostdoc Fellow, Wake Forest University\nShih-Ni Prim completed her PhD in Statistics at North Carolina State University and is currently a Teacher-Scholar Postdoctoral Fellow at Wake Forest University.\nWebsite | GitHub | LinkedIn"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Inferential Models",
-    "section": "",
-    "text": "Inferential Models (IMs) were first introduced by the 2015 book, as pictured to the left, by Ryan Martin and Chuanhai Liu. It provides a tool outside the Frequentist and Bayesian frameworks and offers the capability of uncertainty quantification and reliability guarantee. Succinctly, IMs can do Bayesian-like update without requiring a complete prior.\nUntil now, the introduction of IMs almost solely relies on publications, which require concision and generality. To encourage interested readers explore the use of IMs, this website provides practical guides and information not easily delivered by publications, such as code, tutorials, worked-out examples, recent updates, etc.\n\nContact Us\n Email: prims@wfu.edu"
-  },
-  {
-    "objectID": "tutorial.html",
-    "href": "tutorial.html",
-    "title": "IM Tutorial",
-    "section": "",
-    "text": "One-parameter examples\n\nNormal distribution\nBinomial distribution"
-  },
-  {
     "objectID": "tutorial/Normal.html",
     "href": "tutorial/Normal.html",
     "title": "Normal Distribution",
@@ -49,6 +28,41 @@
     "text": "Now we assume the true parameter is \\(0\\) and sample size is \\(1\\), let’s plot the contour function given that we observed \\(x=1\\).\n\nn &lt;- 1\ntrue_theta &lt;- 0\nX &lt;- 1\n\ntheta &lt;- seq(true_theta-6, true_theta+6, .1)\npi_normal &lt;- contour_normal(X, theta)\nplot(theta, pi_normal, type = \"l\", xlab = expression(theta), ylab = expression(pi[x](theta)))\npi_true_theta &lt;- contour_normal(X, true_theta)\nabline(h=.05, lty=2)\nsegments(-1, 0, 0, 0, col=\"red\", lwd=2)\nsegments(0, 0, 0, contour_normal(X,0), lty=3, col=\"red\")\npoints(0, contour_normal(X,0), col=\"red\", pch=19)\n\n\n\n\n\n\n\n\nAs shown above, the black curve is the contour function for \\(x=1\\). The possibility measure (or upper probability) of the hypothesis \\(h=[-1,0]\\) can be found by maximization:\n\\[ \\Pi_x(h) = \\sup_{\\theta \\in [-1,0]} \\pi_x(\\theta) \\approx 0.317,\\] where the red circle is.\nTo find a \\(95\\%\\) confidence set, the black dashed line at \\(0.05\\) shows that the set is approximately \\([-1, 3]\\)."
   },
   {
+    "objectID": "tutorial.html",
+    "href": "tutorial.html",
+    "title": "IM Tutorial",
+    "section": "",
+    "text": "One-parameter examples\n\nNormal distribution\nBinomial distribution"
+  },
+  {
+    "objectID": "people.html",
+    "href": "people.html",
+    "title": "IMers",
+    "section": "",
+    "text": "Below are the people that are actively working on questions related to IMs.\n\n\n\n\n\n\n\n\n\nRyan Martin\nProfessor, Purdue University\n[Brief bio]\nWebsite\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLeo Cella\nAssistant Professor, Wake Forest University\n[brief bio]\nWebsite\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nShih-Ni Prim\nPostdoc Fellow, Wake Forest University\nShih-Ni Prim completed her PhD in Statistics at North Carolina State University and is currently a Teacher-Scholar Postdoctoral Fellow at Wake Forest University.\nWebsite | GitHub | LinkedIn\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nShih-Ni Prim\nPhD Student, North Carolina State University\nJoe Harrison is a 3rd year PhD student at NC State, interested in the foundations of Statistics, and sometimes plays chess.\nWebsite | GitHub"
+  },
+  {
+    "objectID": "papers.html",
+    "href": "papers.html",
+    "title": "Suggested Reading",
+    "section": "",
+    "text": "Theory\n\nRyan Martin. Possibilistic inferential models: a review. Journal of American Statistical Association, 121 (553): 807-826. Article on arXiv.\n\n\n\nComputation\n\nRyan Martin. An efficient Monte Carlo method for valid prior-free possibilistic statistical inference. Journal of American Statistical Association, to appear. Article on arXiv.\n\n\n\nApplication\n\nRyan Martin, Naomi Singer, Jonathan Williams. Valid and efficient possibilistic structure learning in Gaussian linear regression. Article on arXiv."
+  },
+  {
+    "objectID": "problems.html",
+    "href": "problems.html",
+    "title": "Open Problems",
+    "section": "",
+    "text": "Below is a list of important open problems and the current progress."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Inferential Models",
+    "section": "",
+    "text": "Inferential Models (IMs) were first introduced by the 2015 book, as pictured to the left, by Ryan Martin and Chuanhai Liu. It provides a tool outside the Frequentist and Bayesian frameworks and offers the capability of uncertainty quantification and reliability guarantee. Succinctly, IMs can do Bayesian-like update without requiring a complete prior.\nUntil now, the introduction of IMs almost solely relies on publications, which require concision and generality. To encourage interested readers explore the use of IMs, this website provides practical guides and information not easily delivered by publications, such as code, tutorials, worked-out examples, recent updates, etc.\n\nContact Us\n Email: prims@wfu.edu"
+  },
+  {
     "objectID": "tutorial/Binomial.html",
     "href": "tutorial/Binomial.html",
     "title": "Binomial",
@@ -75,19 +89,5 @@
     "title": "Binomial",
     "section": "",
     "text": "Now assume we observe \\(6\\) successes from \\(10\\) trilas, let’s plot the contour function.\n\nn &lt;- 10\nx &lt;- 6\n\ntheta &lt;- seq(0.01, .99, by = .005)\n\npi_binomial &lt;- contour_binomial(theta, n, x)\nplot(theta, pi_binomial, type = \"l\", xlab = expression(theta), ylab = expression(pi[x](theta)))\nabline(h=.05, lty=2)\nsegments(0.3, 0, 0.5, 0, col=\"red\", lwd=2)\nsegments(0.5, 0, 0.5, contour_binomial(0.5, n, x), lty=3, col=\"red\")\npoints(0.5, contour_binomial(0.5, n, x), col=\"red\", pch=19)\n\n\n\n\n\n\n\n\nAs shown above, the black curve is the contour function for \\(x=6\\). The possibility measure (or upper probability) of the hypothesis \\(h=[0.3,0.5]\\) can be found by maximization:\n\\[ \\Pi_x(h) = \\sup_{\\theta \\in [0.3,0.5]} \\pi_x(\\theta) \\approx 0.754,\\] where the red circle is.\nTo find a \\(95\\%\\) confidence set, the black dashed line at \\(0.05\\) shows that the set is approximately \\([0.25, 0.85]\\)."
-  },
-  {
-    "objectID": "papers.html",
-    "href": "papers.html",
-    "title": "Suggested Reading",
-    "section": "",
-    "text": "Theory\n\nRyan Martin. Possibilistic inferential models: a review. Journal of American Statistical Association, 121 (553): 807-826. Article on arXiv.\n\n\n\nComputation\n\nRyan Martin. An efficient Monte Carlo method for valid prior-free possibilistic statistical inference. Journal of American Statistical Association, to appear. Article on arXiv.\n\n\n\nApplication\n\nRyan Martin, Naomi Singer, Jonathan Williams. Valid and efficient possibilistic structure learning in Gaussian linear regression. Article on arXiv."
-  },
-  {
-    "objectID": "problems.html",
-    "href": "problems.html",
-    "title": "Open Problems",
-    "section": "",
-    "text": "Below is a list of important open problems and the current progress."
   }
 ]
