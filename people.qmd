@@ -73,3 +73,27 @@ Shih-Ni Prim completed her PhD in Statistics at North Carolina State University 
 :::
 ::::::
 :::::::
+
+
+
+::::::: team-member
+:::::: columns
+::: {.column width="30%"}
+# ![](images/SP.png){.team-img}
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="60%"}
+### Shih-Ni Prim
+
+**PhD Student, North Carolina State University**
+
+Joe Harrison is a 3rd year PhD student at NC State, interested in the foundations of Statistics, and sometimes plays chess.
+
+[Website](https://joeh.netlify.app/) \| [GitHub](https://github.com/mkw-TL)
+:::
+::::::
+:::::::
