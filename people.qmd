@@ -79,7 +79,7 @@ Shih-Ni Prim completed her PhD in Statistics at North Carolina State University 
 ::::::: team-member
 :::::: columns
 ::: {.column width="30%"}
-# ![](images/SP.png){.team-img}
+# ![](images/JoeH.jpg){.team-img}
 :::
 
 ::: {.column width="10%"}
@@ -87,7 +87,7 @@ Shih-Ni Prim completed her PhD in Statistics at North Carolina State University 
 :::
 
 ::: {.column width="60%"}
-### Shih-Ni Prim
+### Joe Harrison
 
 **PhD Student, North Carolina State University**
 
