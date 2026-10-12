@@ -3,3 +3,10 @@ title: "Open Problems"
 ---
 
 Below is a list of important open problems and the current progress.
+
+- The largest bottleneck is **Computational Efficiency**. Discussion here. 
+
+- Prediction
+- Data Fusion
+- Non-parametric Estimation
+- Experimental Designs

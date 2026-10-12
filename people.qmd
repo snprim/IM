@@ -4,7 +4,7 @@ title: "IMers"
 
 ::::::: team-member
 
-Below are the people that are actively working on questions related to IMs. 
+Below are people that are actively working on questions related to IMs. 
 
 :::::: columns
 ::: {.column width="30%"}
@@ -18,7 +18,7 @@ Below are the people that are actively working on questions related to IMs.
 ::: {.column width="60%"}
 ### Ryan Martin
 
-**Professor, Purdue University**
+**Distinguished Professor, Purdue University**
 
 \[Brief bio\]
 
@@ -94,6 +94,69 @@ Shih-Ni Prim completed her PhD in Statistics at North Carolina State University 
 Joe Harrison is a 3rd year PhD student at NC State, interested in the foundations of Statistics, and sometimes plays chess.
 
 [Website](https://joeh.netlify.app/) \| [GitHub](https://github.com/mkw-TL)
+:::
+::::::
+:::::::
+::::::: team-member
+:::::: columns
+::: {.column width="30%"}
+# ![](images/RM.jpg){.team-img}
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="60%"}
+### Sahil Patel
+:::
+::::::
+:::::::
+
+::::::: team-member
+:::::: columns
+::: {.column width="30%"}
+# ![](images/RM.jpg){.team-img}
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="60%"}
+### James Robertson
+:::
+::::::
+:::::::
+
+::::::: team-member
+:::::: columns
+::: {.column width="30%"}
+# ![](images/RM.jpg){.team-img}
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="60%"}
+### Max Rainer
+:::
+::::::
+:::::::
+
+::::::: team-member
+:::::: columns
+::: {.column width="30%"}
+# ![](images/RM.jpg){.team-img}
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="60%"}
+### Jungeum Kim
 :::
 ::::::
 :::::::

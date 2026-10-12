@@ -1,0 +1,7 @@
+---
+title: "History and Related Topics"
+---
+
+The Inferential Model idea was originally inspired by ideas from Dempster-Shafer calculus (itself inspired by Fiducial inference). In the Dempster Shafer framework, they create Belief functions -- an alternative way of describing evidence as opposed to probability. It was through the theory of Random Sets that the original IM solution came to be. 
+
+Later realizing that assuming monotonicity in Random Sets (the evidence concentrates at the MLE) corresponds directly to possibility theory, the corresponding implementation has become much cleaner.

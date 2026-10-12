@@ -10,8 +10,10 @@ website:
         text: Home
       - href: people.qmd
       - href: papers.qmd
+      - href: tools.qmd
       - href: tutorial.qmd
       - href: problems.qmd
+      - href: history.qmd
       
   announcement:
     icon: tools

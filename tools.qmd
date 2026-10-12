@@ -1,0 +1,18 @@
+---
+title: "Tools"
+---
+
+As the theory is still in its infancy, a mature suite of tools has not been created. 
+Additionally, since each statistical problem requires specification of its own likelihood (perhaps complicated with spatial/temporal/censored/etc data), bespoke solutions have not been created for all of these.
+
+The primary class of problems which we are proud to present a package on, is the extention to GLMs. 
+
+Example code here:
+
+```{r, eval=FALSE}
+
+```
+
+## Future Tools
+
+Once computation has been sufficiently solved, toolage for more complex problems will be able to be created.
