@@ -28,6 +28,7 @@ Inferential Models provide Bayesian style uncertainty quantification, both witho
 We argue that epistemic uncertainty (that a Bayesian posterior captures) is not best captured by probability, but rather through the language of *possibility*. 
 
 This is because 
+
 :::{.callout-warning}
 Any probability distribution over a parameter space will necessarily put arbitrarily high weight on false hypotheses
 
