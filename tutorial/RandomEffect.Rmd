@@ -97,7 +97,8 @@ sig2 <- .5
 tau2 <- .6
 size <- 100
 
-thetaZ <- thetaE <- seq(.5, 1, by=.02)
+thetaZ <- seq(.1, 1.7, by=.02)
+thetaE <- seq(.1, .9, by=.02)
 pi <- outer(thetaZ, thetaE)
 
 e <- sqrt(sig2) * matrix(rnorm(m * n), nrow=m) 
@@ -127,7 +128,7 @@ for (i in seq_along(thetaZ)){
   }
 }
 
-plot(0, 0, type = "n", xlim = c(.5, 1), ylim = c(.5, 1), xlab = expression(sigma[Z]), ylab = expression(sigma[E]), main=paste0("m=",m,", n=",n))
+plot(0, 0, type = "n", xlim = c(.1, 1.7), ylim = c(.1, .9), xlab = expression(sigma[Z]), ylab = expression(sigma[E]), main=paste0("m=",m,", n=",n))
 contour(thetaZ, thetaE, pi, drawlabels=TRUE, add=TRUE)
 contour(thetaZ, thetaE, pi, levels=c(.1,1),add=TRUE, col="magenta")
 points(sqrt(tau2), sqrt(sig2), col="red", pch=19)
