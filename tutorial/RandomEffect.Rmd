@@ -88,7 +88,7 @@ logrellik <- function(x, sig2, tau2){
 
 ## Example demonstration
 
-Now assume we observe data from $m=50$ groups and each grup has $n=5$ repeated measures. Let's plot the contour function.
+Now assume we observe data from $m=30$ groups and each grup has $n=5$ repeated measures. Let's plot the contour function.
 
 ```{r}
 m <- 30
