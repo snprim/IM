@@ -9,6 +9,7 @@ website:
       - href: index.qmd
         text: Home
       - href: people.qmd
+        text: Friends of IMs
       - href: papers.qmd
       - href: tools.qmd
       - href: tutorial.qmd

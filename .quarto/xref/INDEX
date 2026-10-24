@@ -22,5 +22,11 @@
   },
   "problems.qmd": {
     "problems.html": "601e41ef"
+  },
+  "tools.qmd": {
+    "tools.html": "0d7c1e20"
+  },
+  "history.qmd": {
+    "history.html": "c7060508"
   }
 }
