@@ -97,6 +97,9 @@ Joe Harrison is a 3rd year PhD student at NC State, interested in the foundation
 :::
 ::::::
 :::::::
+
+------------------------------------------------------------------------
+
 ::::::: team-member
 :::::: columns
 ::: {.column width="30%"}
@@ -109,9 +112,18 @@ Joe Harrison is a 3rd year PhD student at NC State, interested in the foundation
 
 ::: {.column width="60%"}
 ### Sahil Patel
+
+**PhD Student, North Carolina State University**
+
+[brief bio]
+
+[Website](https://sites.google.com/ncsu.edu/sahil-patel/) 
+
 :::
 ::::::
 :::::::
+
+------------------------------------------------------------------------
 
 ::::::: team-member
 :::::: columns
@@ -125,9 +137,15 @@ Joe Harrison is a 3rd year PhD student at NC State, interested in the foundation
 
 ::: {.column width="60%"}
 ### James Robertson
+
+**PhD Student, North Carolina State University**
+
 :::
 ::::::
 :::::::
+
+------------------------------------------------------------------------
+
 
 ::::::: team-member
 :::::: columns
@@ -144,6 +162,8 @@ Joe Harrison is a 3rd year PhD student at NC State, interested in the foundation
 :::
 ::::::
 :::::::
+
+------------------------------------------------------------------------
 
 ::::::: team-member
 :::::: columns
