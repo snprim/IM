@@ -6,11 +6,13 @@ title: "Suggested Reading"
 
 - Ryan Martin. Possibilistic inferential models: a review. *Journal of American Statistical Association,* 121 (553): 807-826. [Article on arXiv.](https://arxiv.org/abs/2507.09007)
 
+- Ryan Martin. No-prior Bayes reIMagined: probabilistic approximations of inferential models. *Statistical Science.* [Article on arXiv.](https://arxiv.org/abs/2503.19748)
+
 ### Computation
 
 - Ryan Martin. An efficient Monte Carlo method for valid prior-free possibilistic statistical inference. *Journal of American Statistical Association*, to appear. [Article on arXiv](https://arxiv.org/abs/2501.10585).
 
-Jungeum's paper
+<!-- Jungeum's paper -->
 
 ### Application
 

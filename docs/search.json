@@ -18,7 +18,7 @@
     "href": "papers.html",
     "title": "Suggested Reading",
     "section": "",
-    "text": "Theory\n\nRyan Martin. Possibilistic inferential models: a review. Journal of American Statistical Association, 121 (553): 807-826. Article on arXiv.\n\n\n\nComputation\n\nRyan Martin. An efficient Monte Carlo method for valid prior-free possibilistic statistical inference. Journal of American Statistical Association, to appear. Article on arXiv.\n\nJungeum’s paper\n\n\nApplication\n\nRyan Martin, Naomi Singer, Jonathan Williams. Valid and efficient possibilistic structure learning in Gaussian linear regression. Article on arXiv."
+    "text": "Theory\n\nRyan Martin. Possibilistic inferential models: a review. Journal of American Statistical Association, 121 (553): 807-826. Article on arXiv.\nRyan Martin. No-prior Bayes reIMagined: probabilistic approximations of inferential models. Statistical Science. Article on arXiv.\n\n\n\nComputation\n\nRyan Martin. An efficient Monte Carlo method for valid prior-free possibilistic statistical inference. Journal of American Statistical Association, to appear. Article on arXiv.\n\n\n\n\nApplication\n\nRyan Martin, Naomi Singer, Jonathan Williams. Valid and efficient possibilistic structure learning in Gaussian linear regression. Article on arXiv."
   },
   {
     "objectID": "tutorial.html",
