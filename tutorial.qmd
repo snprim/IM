@@ -8,3 +8,7 @@ format: html
 - [Normal distribution](tutorial/Normal.html)
 
 - [Binomial distribution](tutorial/Binomial.html)
+
+### Two-parameter examples 
+
+- [Random effect model](tutorial/RandomEffect.html)
