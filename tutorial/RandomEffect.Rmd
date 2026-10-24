@@ -128,7 +128,7 @@ for (i in seq_along(thetaZ)){
   }
 }
 
-plot(0, 0, type = "n", xlim = c(.1, 1.7), ylim = c(.1, .9), xlab = expression(sigma[Z]), ylab = expression(sigma[E]), main=paste0("m=",m,", n=",n))
+plot(0, 0, type = "n", xlim = c(.1, 1.7), ylim = c(.1, .9), xlab = expression(sigma[Z]), ylab = expression(sigma[epsilon]), main=paste0("m=",m,", n=",n))
 contour(thetaZ, thetaE, pi, drawlabels=TRUE, add=TRUE)
 contour(thetaZ, thetaE, pi, levels=c(.1,1),add=TRUE, col="magenta")
 points(sqrt(tau2), sqrt(sig2), col="red", pch=19)
