@@ -158,7 +158,7 @@ Joe Harrison is a 3rd year PhD student at NC State, interested in the foundation
 :::
 
 ::: {.column width="60%"}
-### Max Rainer
+### Max Raner
 :::
 ::::::
 :::::::
@@ -177,6 +177,24 @@ Joe Harrison is a 3rd year PhD student at NC State, interested in the foundation
 
 ::: {.column width="60%"}
 ### Jungeum Kim
+:::
+::::::
+:::::::
+
+------------------------------------------------------------------------
+
+::::::: team-member
+:::::: columns
+::: {.column width="30%"}
+# ![](images/RM.jpg){.team-img}
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="60%"}
+### Jonathan Williams
 :::
 ::::::
 :::::::
