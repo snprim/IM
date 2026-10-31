@@ -186,7 +186,7 @@ Joe Harrison is a 3rd year PhD student at NC State, interested in the foundation
 ::::::: team-member
 :::::: columns
 ::: {.column width="30%"}
-# ![](images/RM.jpg){.team-img}
+# ![](images/Cookie_Monster.webp){.team-img}
 :::
 
 ::: {.column width="10%"}
